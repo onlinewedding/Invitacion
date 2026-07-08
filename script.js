@@ -16,7 +16,6 @@ document.getElementById("hoja4").classList.add("hidden")
 document.getElementById("hoja5").classList.add("hidden")
 document.getElementById("hoja6").classList.add("hidden")
 document.getElementById("hoja7").classList.add("hidden")
-document.getElementById("hoja8").classList.add("hidden")
 document.getElementById("hoja9").classList.add("hidden")
 document.getElementById("hoja10").classList.add("hidden")
 
@@ -75,11 +74,7 @@ document.getElementById("hoja7").scrollIntoView({behavior:"smooth"})
 
 function volverHoja6(){
 document.getElementById("hoja6").scrollIntoView({behavior:"smooth"})
-}
 
-function irHoja8(){
-document.getElementById("hoja8").classList.remove("hidden")
-document.getElementById("hoja8").scrollIntoView({behavior:"smooth"})
 }
 
 function volverHoja7(){
@@ -89,10 +84,6 @@ document.getElementById("hoja7").scrollIntoView({behavior:"smooth"})
 function irHoja9(){
 document.getElementById("hoja9").classList.remove("hidden")
 document.getElementById("hoja9").scrollIntoView({behavior:"smooth"})
-}
-
-function volverHoja8(){
-document.getElementById("hoja8").scrollIntoView({behavior:"smooth"})
 }
 
 function irHoja10(){
