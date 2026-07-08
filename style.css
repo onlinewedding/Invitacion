@@ -132,17 +132,32 @@ color:#a1866f;
 }
 
 .flecha{
+
 position:absolute;
-bottom:20px; /* 🔧 FIX VISIBILIDAD */
+
+bottom:24px;
+
 left:50%;
+
 transform:translateX(-50%);
-font-size:42px;
+
+font-size:62px;
+
+font-weight:900;
+
 color:#2c5c5c;
-font-weight:bold;
+
 cursor:pointer;
-z-index:999;
-text-shadow:0 4px 10px rgba(0,0,0,.35);
+
+z-index:9999;
+
 animation:subir 1.2s infinite;
+
+text-shadow:
+0 0 8px rgba(255,255,255,.9),
+0 0 18px rgba(255,255,255,.8),
+0 6px 12px rgba(0,0,0,.55);
+
 }
 
 @keyframes subir{
@@ -152,11 +167,24 @@ animation:subir 1.2s infinite;
 }
 
 .lateral{
+
 top:50%;
-bottom:auto;
-font-size:55px;
-animation:none;
+
 transform:translateY(-50%);
+
+font-size:72px;
+
+font-weight:bold;
+
+animation:none;
+
+color:#2c5c5c;
+
+text-shadow:
+0 0 8px rgba(255,255,255,.9),
+0 0 18px rgba(255,255,255,.8),
+0 6px 12px rgba(0,0,0,.55);
+
 }
 
 .derecha{right:20px;left:auto;}
