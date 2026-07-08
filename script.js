@@ -117,7 +117,7 @@ document.getElementById("segundos").innerHTML = segundos
 
 actualizarContador()
 setInterval(actualizarContador,1000)
-
+}
 
 /* ===========================
         MÚSICA
@@ -130,15 +130,18 @@ let reproduciendo = false;
 
 function toggleMusica(){
 
-if(reproduciendo){
+    if(reproduciendo){
 
-musica.pause();
-btnMusica.classList.remove("girando");
+        musica.pause();
+        btnMusica.classList.remove("girando");
 
-}else{
+    }else{
 
-musica.play();
-btnMusica.classList.add("girando");
+        musica.play();
+        btnMusica.classList.add("girando");
+
+    }
+
+    reproduciendo = !reproduciendo;
 
 }
-
