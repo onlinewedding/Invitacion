@@ -1,3 +1,11 @@
+/* ===========================
+        MÚSICA
+=========================== */
+
+const musica = document.getElementById("musica");
+const btnMusica = document.getElementById("btnMusica");
+
+let reproduciendo = false;
 function abrirSobre(){
 
 const intro = document.getElementById("intro")
@@ -119,31 +127,20 @@ document.getElementById("segundos").innerHTML = segundos
 
 actualizarContador()
 setInterval(actualizarContador,1000)
-}
-
-/* ===========================
-        MÚSICA
-=========================== */
-
-const musica = document.getElementById("musica");
-const btnMusica = document.getElementById("btnMusica");
-
-let reproduciendo = false;
-
 function toggleMusica(){
 
-    if(reproduciendo){
+if(reproduciendo){
 
-        musica.pause();
-        btnMusica.classList.remove("girando");
+musica.pause();
+btnMusica.classList.remove("girando");
 
-    }else{
+}else{
 
-        musica.play();
-        btnMusica.classList.add("girando");
+musica.play();
+btnMusica.classList.add("girando");
 
-    }
+}
 
-    reproduciendo = !reproduciendo;
+reproduciendo = !reproduciendo;
 
 }
