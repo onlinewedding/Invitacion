@@ -142,27 +142,3 @@ btnMusica.classList.add("girando");
 
 }
 
-reproduciendo=!reproduciendo;
-
-}
-
-const musica = document.getElementById("musica");
-const btnMusica = document.getElementById("btnMusica");
-
-let reproduciendo = false;
-
-function toggleMusica(){
-
-    if(reproduciendo){
-        musica.pause();
-        btnMusica.classList.remove("girando");
-    }else{
-        musica.play().then(()=>{
-            btnMusica.classList.add("girando");
-        }).catch(err=>{
-            console.log(err);
-        });
-    }
-
-    reproduciendo = !reproduciendo;
-}
