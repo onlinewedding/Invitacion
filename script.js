@@ -126,3 +126,31 @@ document.getElementById("segundos").innerHTML = segundos
 
 actualizarContador()
 setInterval(actualizarContador,1000)
+
+
+/* ===========================
+        MÚSICA
+=========================== */
+
+const musica = document.getElementById("musica");
+const btnMusica = document.getElementById("btnMusica");
+
+let reproduciendo = false;
+
+function toggleMusica(){
+
+if(reproduciendo){
+
+musica.pause();
+btnMusica.classList.remove("girando");
+
+}else{
+
+musica.play();
+btnMusica.classList.add("girando");
+
+}
+
+reproduciendo=!reproduciendo;
+
+}
