@@ -3,7 +3,9 @@ function abrirSobre(){
 const intro = document.getElementById("intro")
 
 intro.classList.add("ocultar")
-
+musica.play();
+btnMusica.classList.add("girando");
+reproduciendo = true;
 setTimeout(()=>{
 
 intro.style.display="none"
