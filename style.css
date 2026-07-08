@@ -318,3 +318,34 @@ transform:rotate(360deg);
 }
 
 }
+#btnMusica{
+position:fixed;
+top:20px;
+right:20px;
+width:58px;
+height:58px;
+border-radius:50%;
+background:rgba(44,92,92,.9);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+cursor:pointer;
+box-shadow:0 8px 20px rgba(0,0,0,.35);
+z-index:9999;
+transition:.3s;
+}
+
+#btnMusica:hover{
+transform:scale(1.08);
+}
+
+#btnMusica.girando{
+animation:girar 4s linear infinite;
+}
+
+@keyframes girar{
+from{transform:rotate(0deg);}
+to{transform:rotate(360deg);}
+}
